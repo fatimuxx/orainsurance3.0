@@ -220,7 +220,7 @@ section{padding:88px 0}
   box-shadow:0 14px 34px -14px rgba(4,18,38,.55);
 }
 .carrier-badge:hover{transform:translateY(-5px) scale(1.03);box-shadow:0 20px 44px -14px rgba(4,18,38,.7)}
-.carrier-badge img,.carrier-badge svg{max-width:100%;max-height:46px;width:auto;height:auto}
+.carrier-badge img,.carrier-badge svg{max-width:100%;max-height:46px;width:auto;height:auto;overflow:visible}
 @media(max-width:820px){.carriers-grid{grid-template-columns:repeat(3,1fr)}.carriers{padding:44px 22px}}
 @media(max-width:480px){.carriers-grid{grid-template-columns:repeat(2,1fr)}}
 
