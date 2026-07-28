@@ -350,6 +350,7 @@ section{padding:88px 0}
 .review-card p{font-size:14.5px;color:var(--ink);line-height:1.55;margin-bottom:0}
 @media(max-width:1000px){.review-cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.review-cards{grid-template-columns:1fr}}
+@media(max-width:680px){.reviews{padding-top:44px}}
 
 footer{background:#020B18;color:var(--slate-dim);padding:60px 0 30px;font-size:14px;border-top:3px solid;border-image:var(--dawn) 1}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:44px}
@@ -373,7 +374,7 @@ footer a:hover{color:var(--amber)}
 }
 .sticky-cta b{font-size:14px}
 .sticky-cta .btn{padding:11px 20px;font-size:14px}
-@media(max-width:680px){.sticky-cta{display:flex}body{padding-bottom:66px}}
+@media(max-width:680px){.sticky-cta{display:flex}footer{padding-bottom:76px}}
 
 /* reveal on scroll */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,.84,.44,1), transform .7s cubic-bezier(.16,.84,.44,1)}
