@@ -1,6 +1,4 @@
-I reformatted the stylesheet for readability while keeping the same behavior and selectors.
 
-````css
 :root {
   --ink: #041226;
   --ink-2: #0a2140;
@@ -48,7 +46,7 @@ html {
 body {
   font-family: "Montserrat", system-ui, sans-serif;
   color: var(--ink);
-  background: var(--paper);
+  background: var(--ink);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   position: relative;
