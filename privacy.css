@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+address {
+  font-style: normal;
+}
+
 html,
 body {
   margin: 0;
@@ -29,7 +33,14 @@ html {
   scroll-behavior: smooth;
 }
 
-
+body {
+  font-family: "Montserrat", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
 
 /* ---------- nav ---------- */
 .nav {
@@ -164,6 +175,76 @@ html {
 
 
 
+.hero-in {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  padding: 84px 0 96px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.lob-tags {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin: 22px 0 32px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.lob-tags span {
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 400;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 20px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 26px;
+  height: 2px;
+  background: var(--dawn);
+  border-radius: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(23px, 3.2vw, 40px);
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.hero .sub {
+  font-size: 18px;
+  color: var(--slate-dim);
+  max-width: 52ch;
+  margin-bottom: 28px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+
+
+
+
 
 
 
@@ -184,6 +265,7 @@ footer {
 }
 
 footer a {
+  color: var(--slate-dim);
   word-break: break-word;
 }
 
@@ -229,4 +311,8 @@ footer a:hover {
 .foot-bottom nav {
   display: inline-flex;
   gap: 6px;
+}
+
+.foot-bottom a {
+  color: var(--slate-dim);
 }
