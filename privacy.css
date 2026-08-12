@@ -23,6 +23,11 @@ address {
   font-style: normal;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 html,
 body {
   margin: 0;
