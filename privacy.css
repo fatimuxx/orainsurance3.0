@@ -70,3 +70,68 @@ body::after{
 .btn-ghost:hover{border-color:var(--amber);color:var(--amber)}
 @media(max-width:920px){.nav-links{display:none}}
 @media(max-width:560px){.nav-phone{display:none}.nav-logo img{height:48px}}
+
+
+footer {
+  background: #020b18;
+  color: var(--slate-dim);
+  padding: 60px 0 30px;
+  font-size: 14px;
+  border-top: 3px solid;
+  border-image: var(--dawn) 1;
+}
+
+.foot-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 44px;
+}
+
+footer a {
+  word-break: break-word;
+}
+
+.foot-grid img {
+  height: 56px;
+  width: auto;
+  margin-bottom: 16px;
+}
+
+footer h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+footer ul {
+  list-style: none;
+  display: grid;
+  gap: 9px;
+}
+
+footer a:hover {
+  color: var(--amber);
+}
+
+.foot-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.foot-bottom small {
+  font-size: inherit;
+}
+
+.foot-bottom nav {
+  display: inline-flex;
+  gap: 6px;
+}
