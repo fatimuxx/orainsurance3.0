@@ -108,6 +108,31 @@ main a:hover { color: var(--amber); }
   list-style: none;
 }
 
+/* hidden by default; shown via JS toggle at tablet breakpoint */
+.nav-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 6px;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.nav-menu-btn span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 .nav-links a {
   font-weight: 600;
   font-size: 14.5px;
@@ -358,6 +383,7 @@ footer a:hover {
    TABLET  max-width: 1000px  (nav breakpoint)
    ===================================================== */
 @media (max-width: 1000px) {
+  .nav-links { display: none; }
   .nav-menu-btn {
     display: flex;
   }
@@ -397,6 +423,8 @@ footer a:hover {
 @media (max-width: 750px) {
   main { padding: 32px 16px 64px; }
   main h1 { font-size: clamp(22px, 7.5vw, 30px); }
+  .nav-phone { display: none; }
+  .nav-logo img { height: 48px; }
   .foot-bottom { flex-direction: column; align-items: center; text-align: center; }
   .foot-bottom nav { justify-content: center; }
   .nav-actions .btn { padding: 10px 16px; font-size: 13px; }

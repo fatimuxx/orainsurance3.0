@@ -23,7 +23,7 @@
     </nav>
     <div class="nav-actions">
       <a href="mailto:service@orainsurance.com" class="nav-phone">service@orainsurance.com</a>
-      <a href="#quote" class="btn btn-sun">Start my quote</a>
+      <a href="../index.html#quote" class="btn btn-sun">Start my quote</a>
       <button class="nav-menu-btn" aria-expanded="false" aria-controls="nav-list" aria-label="Open navigation menu">
         <span></span><span></span><span></span>
       </button>
@@ -115,9 +115,20 @@ caleb@orainsurance.com<br>
   </div>
 </footer>
 
-</body>
-</html>
-
+<script>
+const menuBtn = document.querySelector('.nav-menu-btn');
+const navList = document.getElementById('nav-list');
+menuBtn.addEventListener('click', () => {
+  const isOpen = navList.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', isOpen);
+});
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.nav-in')) {
+    navList.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
 
 </body>
 </html>
