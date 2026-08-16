@@ -329,9 +329,9 @@ footer a:hover {
 
 
 /* =====================================================
-   TABLET  max-width: 920px  (nav breakpoint)
+   TABLET  max-width: 1000px  (nav breakpoint)
    ===================================================== */
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
   .nav-menu-btn {
     display: flex;
   }
@@ -359,9 +359,9 @@ footer a:hover {
 }
 
 /* =====================================================
-   TABLET  max-width: 768px
+   TABLET  max-width: 1000px
    ===================================================== */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   section {
     padding: 64px 0;
   }
@@ -400,9 +400,9 @@ footer a:hover {
 }
 
 /* =====================================================
-   MOBILE  max-width: 480px
+   MOBILE  max-width: 750px
    ===================================================== */
-@media (max-width: 480px) {
+@media (max-width: 750px) {
   .wrap {
     padding: 0 16px;
   }
